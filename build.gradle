@@ -25,5 +25,18 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+
+    // itext7を追加
+    implementation 'com.github.itext.itext7:layout:7.1.4'
+    // itext7用日本語フォントを追加
+    implementation 'com.github.itext.itext7:font-asian:7.1.4'
+
+    // slf4jを追加
+    implementation 'org.slf4j:slf4j-log4j12:1.7.21'
 }
 
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
